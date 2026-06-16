@@ -1,0 +1,146 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Build / Packaging
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+uvicorn.log
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+**/data/**
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# =========================
+# Local Storage / Runtime Artifacts
+# =========================
+.local/
+tmp/
+temp/
+
+# SQLite memory DB
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Qdrant (local vector storage)
+# =========================
+qdrant_storage/
+storage/
+*.wal
+*.snapshot
+
+# =========================
+# Uploaded / Ingested Files
+# =========================
+uploads/
+ingested_docs/
+*.pdf
+*.docx
+*.txt
+
+# (optional) keep small test fixtures
+!tests/fixtures/
+
+# =========================
+# Embeddings / Cached Vectors
+# =========================
+embeddings_cache/
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# =========================
+# Model / Checkpoints
+# =========================
+models/
+checkpoints/
+*.pt
+*.ckpt
+
+# =========================
+# Docker
+# =========================
+docker_data/
+*.tar
+
+# =========================
+# Coverage / Testing
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
+
+# =========================
+# Misc
+# =========================
+*.bak
+*.tmp
+*.cache
+validation_outputs/
+ingest_files/
+ingested_qc_module_outputs/
+
+# =========================
+# Svelte / SvelteKit / Web
+# =========================
+# Node modules
+node_modules/
+
+# SvelteKit build artifacts
+.svelte-kit/
+.svelte/
+
+# Vite / build artifacts
+.vite/
+public/build/
+build/
+dist/
+
+# Local env overrides
+.env.local
+.env.*.local
+
+# Package manager lockfiles
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
