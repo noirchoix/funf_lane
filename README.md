@@ -1,8 +1,24 @@
-# ChemRAG
+# Fünf RAG / ChemRAG
 
-ChemRAG is an independent FastAPI microservice that provides citation-backed retrieval, semantic memory, and planner-style explanation around the phytochemistry wheel system.
+A production-oriented RAG and information-retrieval platform built around hybrid search, domain-specific retrieval lanes, reranking, provider failover, persistent memory, structured ingestion, and retrieval-quality evaluation. The engineering emphasis is on why evidence reaches the prompt and how retrieval quality is measured, not merely on generating answers.
 
-ChemRAG is **not** the numerical compute layer. It does not replace `reaction_framework`, `formulation_engine`, FoodDB, COCO taxonomy, or DESS. It retrieves evidence, explains compute outputs, preserves decisions, and provides planner-level orchestration.
+## Engineering profile
+
+This repository demonstrates:
+
+- Qdrant dense retrieval across domain-specific lanes/collections
+- Custom BM25 sparse retrieval, reciprocal-rank fusion, and optional cross-encoder reranking
+- Lane balancing/quotas to prevent large corpora from overwhelming specialized evidence
+- Dense/sparse/fused/reranked/final-context retrieval traces
+- Gemini/Voyage embedding routing and Gemini/DeepSeek generation fallback
+- SQLite audit/event memory plus Qdrant semantic memory and compaction policies
+- PDF/general/structured-phytochemistry ingestion
+- Recall@K, MRR, nDCG@K, citation/no-citation behavior, evaluation APIs/scripts, and CI-gate infrastructure
+- Docker/Compose, GitHub Actions, metrics endpoints, and OpenTelemetry foundations
+
+## Reliability and scope
+
+The architecture is production-oriented, but the repository test suite require hardening.
 
 ## Current Version
 
