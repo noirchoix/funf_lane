@@ -46,10 +46,4 @@ POST /v1/funf/upload
 POST /v1/funf/chat
 ```
 
-Existing ChemRAG Pro routes remain available:
 
-```text
-POST /v1/pro/query
-POST /v1/pro/eval/run
-GET  /v1/pro/capabilities
-```
